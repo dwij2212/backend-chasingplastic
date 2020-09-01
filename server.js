@@ -5,6 +5,7 @@ const cors = require("cors")
 const PORT = 5000
 nodeMailer = require("nodemailer")
 
+app.use("/admin", require("./admin"))
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
